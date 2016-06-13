@@ -276,7 +276,7 @@ function _wp_handle_upload( &$file, $overrides, $time, $action ) {
 	}
 
 	/*
-	 * This may not have orignially been intended to be overrideable,
+	 * This may not have originally been intended to be overrideable,
 	 * but historically has been.
 	 */
 	if ( isset( $overrides['upload_error_strings'] ) ) {

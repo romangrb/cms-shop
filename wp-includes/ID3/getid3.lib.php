@@ -946,7 +946,7 @@ class getid3_lib
 			return $string;
 		}
 
-		// iconv() availble
+		// iconv() available
 		if (function_exists('iconv')) {
 			if ($converted_string = @iconv($in_charset, $out_charset.'//TRANSLIT', $string)) {
 				switch ($out_charset) {

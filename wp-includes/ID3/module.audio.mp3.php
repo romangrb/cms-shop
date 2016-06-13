@@ -25,7 +25,7 @@ define('GETID3_MP3_VALID_CHECK_FRAMES', 35);
 class getid3_mp3 extends getid3_handler
 {
 
-	public $allow_bruteforce = false; // forces getID3() to scan the file byte-by-byte and log all the valid audio frame headers - extremely slow, unrecommended, but may provide data from otherwise-unusuable files
+	public $allow_bruteforce = false; // forces getID3() to scan the file byte-by-byte and log all the valid audio frame headers - extremely slow, unrecommended, but may provide data from otherwise-unusable files
 
 	public function Analyze() {
 		$info = &$this->getid3->info;
