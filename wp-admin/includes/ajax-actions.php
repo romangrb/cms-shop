@@ -3148,7 +3148,7 @@ function wp_ajax_update_plugin() {
 		wp_send_json_error( $status );
 
 	} else {
-		// An unhandled error occured
+		// An unhandled error occurred
 		$status['error'] = __( 'Plugin update failed.' );
 		wp_send_json_error( $status );
 	}

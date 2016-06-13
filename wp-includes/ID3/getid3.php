@@ -199,7 +199,7 @@ class getID3
 								}
 							}
 						} else {
-							$this->startup_warning .= 'GETID3_HELPERAPPSDIR must not have any spaces in it - use 8dot3 naming convention if neccesary. You can run "dir /x" from the commandline to see the correct 8.3-style names.';
+							$this->startup_warning .= 'GETID3_HELPERAPPSDIR must not have any spaces in it - use 8dot3 naming convention if necessary. You can run "dir /x" from the commandline to see the correct 8.3-style names.';
 						}
 					}
 					$path_so_far[] = $value;

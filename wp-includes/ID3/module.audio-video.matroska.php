@@ -40,7 +40,7 @@ define('EBML_ID_PREVUID',                     0x1CB923); //     [3C][B9][23] -- 
 define('EBML_ID_NEXTFILENAME',                0x1E83BB); //     [3E][83][BB] -- An escaped filename corresponding to the next segment.
 define('EBML_ID_NEXTUID',                     0x1EB923); //     [3E][B9][23] -- A unique ID to identify the next chained segment (128 bits).
 define('EBML_ID_CONTENTCOMPALGO',               0x0254); //         [42][54] -- The compression algorithm used. Algorithms that have been specified so far are:
-define('EBML_ID_CONTENTCOMPSETTINGS',           0x0255); //         [42][55] -- Settings that might be needed by the decompressor. For Header Stripping (ContentCompAlgo=3), the bytes that were removed from the beggining of each frames of the track.
+define('EBML_ID_CONTENTCOMPSETTINGS',           0x0255); //         [42][55] -- Settings that might be needed by the decompressor. For Header Stripping (ContentCompAlgo=3), the bytes that were removed from the beginning of each frames of the track.
 define('EBML_ID_DOCTYPE',                       0x0282); //         [42][82] -- A string that describes the type of document that follows this EBML header ('matroska' in our case).
 define('EBML_ID_DOCTYPEREADVERSION',            0x0285); //         [42][85] -- The minimum DocType version an interpreter has to support to read this file.
 define('EBML_ID_EBMLVERSION',                   0x0286); //         [42][86] -- The version of EBML parser used to create the file.
@@ -184,7 +184,7 @@ define('EBML_ID_CUETRACKPOSITIONS',               0x37); //             [B7] -- 
 define('EBML_ID_FLAGENABLED',                     0x39); //             [B9] -- Set if the track is used.
 define('EBML_ID_PIXELHEIGHT',                     0x3A); //             [BA] -- Height of the encoded video frames in pixels.
 define('EBML_ID_CUEPOINT',                        0x3B); //             [BB] -- Contains all information relative to a seek point in the segment.
-define('EBML_ID_CRC32',                           0x3F); //             [BF] -- The CRC is computed on all the data of the Master element it's in, regardless of its position. It's recommended to put the CRC value at the beggining of the Master element for easier reading. All level 1 elements should include a CRC-32.
+define('EBML_ID_CRC32',                           0x3F); //             [BF] -- The CRC is computed on all the data of the Master element it's in, regardless of its position. It's recommended to put the CRC value at the beginning of the Master element for easier reading. All level 1 elements should include a CRC-32.
 define('EBML_ID_CLUSTERBLOCKADDITIONID',          0x4B); //             [CB] -- The ID of the BlockAdditional element (0 is the main Block).
 define('EBML_ID_CLUSTERLACENUMBER',               0x4C); //             [CC] -- The reverse number of the frame in the lace (0 is the last frame, 1 is the next to last, etc). While there are a few files in the wild with this element, it is no longer in use and has been deprecated. Being able to interpret this element is not required for playback.
 define('EBML_ID_CLUSTERFRAMENUMBER',              0x4D); //             [CD] -- The number of the frame to generate from this lace with this delay (allow you to generate many frames from the same Block/Frame).

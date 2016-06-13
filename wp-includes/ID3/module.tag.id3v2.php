@@ -109,7 +109,7 @@ class getid3_id3v2 extends getid3_handler
 
 		// create 'encoding' key - used by getid3::HandleAllTags()
 		// in ID3v2 every field can have it's own encoding type
-		// so force everything to UTF-8 so it can be handled consistantly
+		// so force everything to UTF-8 so it can be handled consistently
 		$thisfile_id3v2['encoding'] = 'UTF-8';
 
 

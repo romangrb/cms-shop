@@ -92,7 +92,7 @@ class SimplePie_XML_Declaration_Parser
 	var $data = '';
 
 	/**
-	 * Input data length (to avoid calling strlen() everytime this is needed)
+	 * Input data length (to avoid calling strlen() every time this is needed)
 	 *
 	 * @access private
 	 * @var int
