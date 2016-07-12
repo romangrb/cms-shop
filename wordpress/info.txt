@@ -1,0 +1,10 @@
+MySQL 5.5 database added.  Please make note of these credentials:
+
+       Root User: romangrb
+   Database Name: c9
+
+ * Starting MySQL database server mysqld
+   ...done.
+   
+   
+   mysql -- user username
