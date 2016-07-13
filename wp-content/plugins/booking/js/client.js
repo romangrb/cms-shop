@@ -505,8 +505,8 @@ function setReservedSelectedDates( bk_type ){
 
 // Check fields at form and then send request
 function mybooking_submit( submit_form , bk_type, wpdev_active_locale){
-
-
+/*TEST*/
+    console.log(submit_form , bk_type, wpdev_active_locale);
     //Show message if no selected days
     if (document.getElementById('date_booking' + bk_type).value == '')  {
 
@@ -547,7 +547,8 @@ function mybooking_submit( submit_form , bk_type, wpdev_active_locale){
 
 
     // Serialize form here
-    for (i=0; i<count; i++)   {
+    
+    for (var i=0; i<count; i++)   {
         element = submit_form.elements[i];
 
         if ( (element.type !=='button') && (element.type !=='hidden') && ( element.name !== ('date_booking' + bk_type) )   ) {           // Skip buttons and hidden element - type
@@ -823,7 +824,8 @@ function form_submit_send( bk_type, formdata, captcha_chalange, user_captcha ,wp
 //<![CDATA[
 function send_ajax_submit(bk_type,formdata,captcha_chalange,user_captcha,is_send_emeils,my_booking_hash,my_booking_form  ,wpdev_active_locale ) {
         // Ajax POST here
-
+/*TEST*/
+console.log('formdata', formdata);
         var my_bk_res = bk_type;
         if ( document.getElementById('bk_type' + bk_type) != null ) my_bk_res = document.getElementById('bk_type' + bk_type).value;
 

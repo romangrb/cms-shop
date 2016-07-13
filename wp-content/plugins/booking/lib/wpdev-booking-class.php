@@ -1584,9 +1584,9 @@ class wpdev_booking {
         
         if ($booking_form_field_active7  != 'On')
         $my_form.='  <div class="control-group">
-                      <label for="name'.$my_boook_type.'" class="control-label">'.$booking_form_field_label7.(($booking_form_field_required7=='On')?'*':'').':</label>
+                      <label for="test'.$my_boook_type.'" class="control-label">'.$booking_form_field_label7.(($booking_form_field_required7=='On')?'*':'').':</label>
                       <div class="controls">
-                        <input type="text" name="name'.$my_boook_type.'" id="name'.$my_boook_type.'" class="input-xlarge'.(($booking_form_field_required7=='On')?' wpdev-validates-as-required ':'').'">
+                        <input type="text" name="test'.$my_boook_type.'" id="test'.$my_boook_type.'" class="input-xlarge'.(($booking_form_field_required7=='On')?' wpdev-validates-as-required ':'').'">
                       </div>
                     </div>';
         /*END MANUAL*/
@@ -1654,16 +1654,16 @@ class wpdev_booking {
                       </div>
                     </div>';
                     
-        /*START*/
+        /*START TEST*/
         
         if ($booking_form_field_active7  != 'Off')
         $my_form.='  <div class="control-group">
                       <label for="test'.$my_boook_type.'" class="control-label">'.$booking_form_field_label7.(($booking_form_field_required7=='On')?'*':'').':</label>
                       <div class="controls">
-                        <input type="text" name="test'.$my_boook_type.'" id="name'.$my_boook_type.'" class="input-xlarge'.(($booking_form_field_required7=='On')?' wpdev-validates-as-required ':'').'">
+                        <input type="text" name="test'.$my_boook_type.'" id="test'.$my_boook_type.'" class="input-xlarge'.(($booking_form_field_required7=='On')?' wpdev-validates-as-required ':'').'">
                       </div>
                     </div>';
-        /*END*/
+        /*END TEST*/
         
         $my_form.='  <div class="control-group">[captcha]</div>';
                     

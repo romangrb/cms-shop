@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;                                             
 //    S u p p o r t    f u n c t i o n s    f o r     A j a x    ///////////////
 ////////////////////////////////////////////////////////////////////////////////
 function wpbc_verify_nonce_failed( $nonce, $action, $user, $token ) {
-    debuge('$nonce, $action, $user, $token',$nonce, $action, $user, $token);
+   // debuge('$nonce, $action, $user, $token',$nonce, $action, $user, $token);
 }
 // Verify the nonce.    
 function wpdev_check_nonce_in_admin_panel( $action_check = 'wpbc_ajax_admin_nonce' ){    

@@ -265,6 +265,10 @@ if ( ! defined( 'ABSPATH' ) ) exit;                                             
         $booking_form_field_active6     = get_bk_option( 'booking_form_field_active6');
         $booking_form_field_label6      = get_bk_option( 'booking_form_field_label6');
         $booking_form_field_label6      = apply_bk_filter('wpdev_check_for_active_language', $booking_form_field_label6 );
+        /*TEST*/
+        $booking_form_field_active7     = get_bk_option( 'booking_form_field_active7');
+        $booking_form_field_label7      = get_bk_option( 'booking_form_field_label7');
+        $booking_form_field_label7      = apply_bk_filter('wpdev_check_for_active_language', $booking_form_field_label7 );
         
         $booking_form_show = '<div style="text-align:left;word-wrap: break-word;">';
         if ($booking_form_field_active1 != 'Off')
@@ -279,6 +283,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;                                             
         $booking_form_show.='<strong>'.$booking_form_field_label4.'</strong>: <span class="fieldvalue">[phone]</span><br/>';
         if ($booking_form_field_active5 != 'Off')
         $booking_form_show.='<strong>'.$booking_form_field_label5.'</strong>: <br /><span class="fieldvalue">[details]</span>';
+        if ($booking_form_field_active7 != 'Off')
+        $booking_form_show.='<strong>'.$booking_form_field_label7.'</strong>: <br /><span class="fieldvalue">[test]</span>';
         $booking_form_show.='</div>';
             
         return $booking_form_show;

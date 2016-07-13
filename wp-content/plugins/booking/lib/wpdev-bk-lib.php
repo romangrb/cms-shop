@@ -1398,6 +1398,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;                                             
             $page_num       = $bk_listing[3];
             $page_items_count= $bk_listing[4];
             //debuge($args, count($bookings),$bookings, $booking_types[$args['wh_booking_type']], $_REQUEST);
+         // debuge($bk_listing);
 //debuge($booking_types);
             booking_calendar_overview_table($bookings , $booking_types);
         }
@@ -2728,6 +2729,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;                                             
         $time_array_new     = $bookings_date_time[1];
 //debuge($time_array_new);
 //debuge($dates_array, $bookings, $booking_types, $time_array_new );
+//debuge($bookings);
         wpdev_bk_timeline( $dates_array, $bookings, $booking_types, $time_array_new );
     }
 

@@ -1,0 +1,12 @@
+[13-Jul-2016 08:39:04 UTC] PHP Parse error:  syntax error, unexpected '$print_data' (T_VARIABLE) in /home/ubuntu/workspace/wp-content/plugins/booking/lib/wpdev-bk-lib.php on line 1878
+[13-Jul-2016 08:39:04 UTC] PHP Stack trace:
+[13-Jul-2016 08:39:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin.php:0
+[13-Jul-2016 08:39:04 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[13-Jul-2016 08:39:04 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[13-Jul-2016 08:39:04 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[13-Jul-2016 08:39:04 UTC] PHP   5. include_once() /home/ubuntu/workspace/wp-settings.php:255
+[13-Jul-2016 08:39:04 UTC] PHP   6. require_once() /home/ubuntu/workspace/wp-content/plugins/booking/wpdev-booking.php:69
+[13-Jul-2016 08:39:04 UTC] PHP   7. wpbookingcalendar() /home/ubuntu/workspace/wp-content/plugins/booking/lib/wpbc.php:143
+[13-Jul-2016 08:39:04 UTC] PHP   8. Booking_Calendar::getInstance() /home/ubuntu/workspace/wp-content/plugins/booking/lib/wpbc.php:138
+[13-Jul-2016 08:39:04 UTC] PHP   9. Booking_Calendar->includes() /home/ubuntu/workspace/wp-content/plugins/booking/lib/wpbc.php:41
+[13-Jul-2016 08:39:04 UTC] PHP  10. require_once() /home/ubuntu/workspace/wp-content/plugins/booking/lib/wpbc.php:62
